@@ -28,6 +28,7 @@ if(($ARGV[0] =~ m/--help/i) or ($ARGV[0] =~ m/-h/i))
 }elsif($ARGV[0] =~ m/--upgrade/i)
 {
 	printf "  Update Function ... ;)\n\n\n\n";
+    do "core/upgrade.pl";
 	print color("reset");
 	exit(1);
 }elsif (($#ARGV + 1) != 1) {
