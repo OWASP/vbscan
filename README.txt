@@ -4,11 +4,11 @@ an open source project for scan and analysis vbulletin vulnerability
 written in perl 
 #    About Author :
 #
-#    Founder  : Mohammad Reza Espargham
-#    Location : Iran
-#    Version  : 0.1.1
+#    Founder     :   Mohammad Reza Espargham
+#    Location    :   Iran
+#    Version     :   0.1.1
 #    Linkedin    :   https://ir.linkedin.com/in/rezasp
-#    E-Mail      :   me@reza.es
+#    E-Mail      :   me@reza.es , reza.espargham@gmail.com
 #    Website     :   www.reza.es
 #    Twitter     :   https://twitter.com/rezesp
 #    FaceBook    :   https://www.facebook.com/mohammadreza.espargham
