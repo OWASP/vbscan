@@ -65,3 +65,5 @@ do "exploit/htmlcode.pl";
 do "modules/c99finder.pl";
 do "modules/backupfinder.pl";
 do "modules/errfinder.pl";
+print color("reset");
+
