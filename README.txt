@@ -1,4 +1,4 @@
-VBScan Version 0.1.1
+VBScan Version 0.1.2
 
 an open source project for scan and analysis vbulletin vulnerability 
 written in perl 
@@ -6,7 +6,7 @@ written in perl
 #
 #    Founder     :   Mohammad Reza Espargham
 #    Location    :   Iran
-#    Version     :   0.1.1
+#    Version     :   0.1.2
 #    Linkedin    :   https://ir.linkedin.com/in/rezasp
 #    E-Mail      :   me@reza.es , reza.espargham@gmail.com
 #    Website     :   www.reza.es

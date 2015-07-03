@@ -2,7 +2,6 @@
 
 #Coded By Mohammad Reza Espargham
 #VBScan
-#ver : 0.1.1
 
 #i hate switch case :) just if/else/elsif
 

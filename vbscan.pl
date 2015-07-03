@@ -23,7 +23,7 @@
 #
 #    Founder     :   Mohammad Reza Espargham
 #    Location    :   Iran
-#    Version     :   0.1.1
+#    Version     :   0.1.2
 #    Linkedin    :   https://ir.linkedin.com/in/rezasp
 #    E-Mail      :   me@reza.es , reza.espargham@gmail.com
 #    Website     :   www.reza.es
@@ -33,9 +33,9 @@
 #    Github      :   https://github.com/rezasp/vbscan/
 
 $author="Mohammad Reza Espargham";
-$version="0.1.1";
+$version="0.1.2";
 $codename="Sleep";
-$update="2015/06/14";
+$update="2015/07/03";
 
 system(($^O eq 'MSWin32') ? 'cls' : 'clear');
 use Term::ANSIColor;
