@@ -2,6 +2,7 @@
 VBScan 0.1.3
 ------------------------
   - Change Default UserAgent
+  - Fixed admincp/modcp finder bug
   - Fixed Reported Bugs
 
 
