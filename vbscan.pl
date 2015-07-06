@@ -23,7 +23,7 @@
 #
 #    Founder     :   Mohammad Reza Espargham
 #    Location    :   Iran
-#    Version     :   0.1.2
+#    Version     :   0.1.3
 #    Linkedin    :   https://ir.linkedin.com/in/rezasp
 #    E-Mail      :   me@reza.es , reza.espargham@gmail.com
 #    Website     :   www.reza.es
