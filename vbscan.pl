@@ -33,9 +33,9 @@
 #    Github      :   https://github.com/rezasp/vbscan/
 
 $author="Mohammad Reza Espargham";
-$version="0.1.2";
+$version="0.1.3";
 $codename="Sleep";
-$update="2015/07/03";
+$update="2015/07/06";
 
 system(($^O eq 'MSWin32') ? 'cls' : 'clear');
 use Term::ANSIColor;
