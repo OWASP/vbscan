@@ -15,7 +15,7 @@ print color("blue");
 $ua = LWP::UserAgent->new(ssl_opts => { verify_hostname => 0 });
 $ua->protocols_allowed( [ 'http','https'] );
 $ua->timeout(15);
-$ua->agent('Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; SV1; .NET CLR 2.0.50727)');
+$ua->agent('Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/43.0.2357.81 Safari/537.36');
 $ua->requests_redirectable(undef);
 
 
