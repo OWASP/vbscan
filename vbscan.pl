@@ -32,9 +32,9 @@
 #    Github      :   https://github.com/rezasp/vbscan/
 
 $author="Mohammad Reza Espargham";
-$version="0.1.4";
+$version="0.1.5";
 $codename="Dennis Ritchie"; # https://en.wikipedia.org/wiki/Dennis_Ritchie <3
-$update="2016/01/31";
+$update="2016/02/08";
 
 system(($^O eq 'MSWin32') ? 'cls' : 'clear');
 use Term::ANSIColor;

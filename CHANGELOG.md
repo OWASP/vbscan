@@ -1,3 +1,10 @@
+VBScan 0.1.5 [Dennis Ritchie]
+============
+* Fixed html tags module bug
+* Fixed issues #8 #9
+* Fixed reported bugs
+
+
 
 VBScan 0.1.4 [Dennis Ritchie]
 ============
