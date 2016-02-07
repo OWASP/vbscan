@@ -21,4 +21,3 @@ usage :
 ./vbscan.pl <target>
 ./vbscan.pl http://target.com/vbulletin
 ```
-
