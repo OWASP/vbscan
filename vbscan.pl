@@ -38,6 +38,8 @@ $update="2016/02/08";
 
 system(($^O eq 'MSWin32') ? 'cls' : 'clear');
 use Term::ANSIColor;
+use strict;
+use warnings;
 
 $SIG{INT} = \&interrupt;
 sub interrupt {
@@ -65,10 +67,11 @@ do "modules/backupfinder.pl";
 do "modules/errfinder.pl";
 do "exploit/decodearguments.pl";
 
-$target="$target/";
-if($target =~ /http:\/\/(.*?)\//){$li=$1;}
-if($target =~ /https:\/\/(.*?)\//){$li=$1;}
+our $target="$target/";
+if($target =~ /http:\/\/(.*?)\//){our $li=$1;}
+if($target =~ /https:\/\/(.*?)\//){our $li=$1;}
 open(my $fh, '>', "reports/$1.txt");
+our $log="$log";
 print $fh "$log";
 close $fh;
 
