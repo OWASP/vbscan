@@ -1,7 +1,7 @@
 #!/usr/bin/perl
 #
 #            --------------------------------------------------
-#                            vbscan
+#                            OWASP VBScan
 #            --------------------------------------------------
 #        Copyright (C) <2015>  <(Mohammad Reza Espargham)>
 #
@@ -19,22 +19,19 @@
 #        along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #
 #
-# About Author :
+# About Project Leader :
 #
-#    Founder     :   Mohammad Reza Espargham
-#    Location    :   Iran
+#    Project Leader     :   Mohammad Reza Espargham
 #    Linkedin    :   https://ir.linkedin.com/in/rezasp
-#    E-Mail      :   me@reza.es , reza.espargham@gmail.com
-#    Website     :   www.reza.es
+#    E-Mail      :   me@reza.es , reza.espargham@gmail.com , reza.espargham@owasp.org
 #    Twitter     :   https://twitter.com/rezesp
-#    FaceBook    :   https://www.facebook.com/reza.espargham
 #    SourceForge :   https://sourceforge.net/projects/vbscan/
 #    Github      :   https://github.com/rezasp/vbscan/
 
-$author="Mohammad Reza Espargham";
-$version="0.1.5";
-$codename="Dennis Ritchie"; # https://en.wikipedia.org/wiki/Dennis_Ritchie <3
-$update="2016/02/08";
+$author="Mohammad Reza Espargham";$author.="";
+$version="0.1.6";$version.="";
+$codename="Dennis Ritchie again";$codename.=""; # https://en.wikipedia.org/wiki/Dennis_Ritchie <3
+$update="2016/04/30";$update.="";
 
 system(($^O eq 'MSWin32') ? 'cls' : 'clear');
 use Term::ANSIColor;
@@ -49,9 +46,13 @@ do "core/header.pl";
 do "core/main.pl";
 do "core/ver.pl";
 do "exploit/verexploit.pl";
+do "modules/license.pl";
+do "modules/dirlisting.pl";
+do "modules/missconfig.pl";
 do "modules/cpfinder.pl";
 do "modules/cpupgrade.pl";
 do "modules/validator.pl";
+do "modules/robots.pl";
 do "exploit/faq.pl";
 do "modules/configfinder.pl";
 do "exploit/vbseo.pl";
@@ -66,15 +67,15 @@ do "modules/errfinder.pl";
 do "exploit/decodearguments.pl";
 
 $target="$target/";
-if($target =~ /http:\/\/(.*?)\//){$li=$1;}
-if($target =~ /https:\/\/(.*?)\//){$li=$1;}
+if($target =~ /http:\/\/(.*?)\//){our $li=$1;}
+if($target =~ /https:\/\/(.*?)\//){our $li=$1;}
 open(my $fh, '>', "reports/$1.txt");
+our $log="$log";
 print $fh "$log";
 close $fh;
 
-print "\n\n\n";
-tprint("Your Report : reports/$1.txt\n\n");
-
+print color("yellow");
+print "\n\nYour Report : reports/$1.txt\n\n";
 
 print color("reset");
 

@@ -1,6 +1,6 @@
 #start config.php.x check
 $ctf=0;
-dprint("Checking config.php.x for diclure config file");
+dprint("Checking config.php.x for disclure config file");
 @configs = ('config.php~','config.php.new','config.php.new~','config.php.old','config.php.old~','config.bak','config.php.bak','config.php.bkp','config.txt','config.php.txt','config - Copy.php');
 foreach $config(@configs){
     $source=$ua->get("$target/includes/$config")->decoded_content;
