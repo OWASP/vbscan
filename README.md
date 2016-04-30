@@ -22,6 +22,9 @@ usage :
 ./vbscan.pl <target>
 ./vbscan.pl http://target.com/vbulletin
 ```
-
+ 
+ 
+  
+  
 
 ![screenshot](https://raw.githubusercontent.com/rezasp/Trash/master/vbscan.jpg)
