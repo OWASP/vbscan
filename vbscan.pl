@@ -66,7 +66,7 @@ do "modules/backupfinder.pl";
 do "modules/errfinder.pl";
 do "exploit/decodearguments.pl";
 
-$target="$target/";
+our $target="$target/";
 if($target =~ /http:\/\/(.*?)\//){our $li=$1;}
 if($target =~ /https:\/\/(.*?)\//){our $li=$1;}
 open(my $fh, '>', "reports/$1.txt");
