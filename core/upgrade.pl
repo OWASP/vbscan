@@ -1,7 +1,7 @@
 #!/usr/bin/perl
 
 #Coded By Mohammad Reza Espargham
-#VBScan
+#OWASP VBScan
 
 print "\n[+] Updating ...\n";
 $x=`pwd`;

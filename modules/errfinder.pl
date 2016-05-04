@@ -1,15 +1,14 @@
 #start Checking error.log
-$ertf=0;
 dprint("Finding common log files name");
-$response = $ua->get("$target/error.log");
-if ($response->status_line =~ /200/g) {
-    tprint("error.log path : $target/error.log");
-    $ertf=1;
-}
-$response = $ua->get("$target/error_log");
-if ($response->status_line =~ /200/g) {
-    tprint("error_log path : $target/error_log");
-    $ertf=1;
+$ertf=0;
+@error = ('error.log','error_log','php-scripts.log','php.errors','php5-fpm.log','php_errors.log','debug.log');
+foreach $er(@error){
+    if (($content_type, $doc_length, $mod_time, $expires, $server) =head("$target/$er")){
+        if($content_type !~ m/text\/html/i){
+            tprint("$er path :  $target/$er\n");
+           $ertf=1;
+        }
+    }
 }
 if($ertf==0) {
     fprint("error log is not found\n");

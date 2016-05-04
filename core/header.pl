@@ -16,7 +16,7 @@ if(!defined $ARGV[0]){
     };
     print color("reset");
     print "
-    --=[". color("BLUE") . "VBScan". color("reset") ."
+    --=[". color("BLUE") . "OWASP VBScan". color("reset") ."
     +---++---==[Version : "
     . color("red"). "$version\n". color("reset") . "    +---++---==[Update Date : [". color("red") . "$update". color("reset") . "]
     +---++---==[Author : ". color("red") . "Mohammad Reza Espargham". color("reset")."
@@ -32,7 +32,7 @@ if(!defined $ARGV[0]){
 }
 
 #Start help Function
-if(($ARGV[0] =~ m/--help/i) or ($ARGV[0] =~ m/-h/i))
+if(($ARGV[0] =~ m/--help/i))
 {
 	printf "   Usage: \n \t$0 <Target>\n";
 	printf "\t$0 http://target.com/vbulletin\n\n";
