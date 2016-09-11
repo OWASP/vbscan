@@ -39,7 +39,7 @@ if($target =~ /https:\/\/(.*?)\//){our $li=$1;}
 $tmptarget="$1";
 mkdir "reports/$tmptarget";
 
-open(my $fh, '>', "reports/$tmptarget\_report\_$year-$mon-$mday\_at\_$hour.$min.$sec.txt");
+open(my $fh, '>', "reports/$tmptarget/$tmptarget\_report\_$year-$mon-$mday\_at\_$hour.$min.$sec.txt");
 our $log="$log";
 print $fh "$log";
 close $fh;
