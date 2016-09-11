@@ -29,12 +29,14 @@
 #    Github      :   https://github.com/rezasp/vbscan/
 
 $author="Mohammad Reza Espargham";$author.="";
-$version="0.1.6";$version.="";
-$codename="Dennis Ritchie again";$codename.=""; # https://en.wikipedia.org/wiki/Dennis_Ritchie <3
-$update="2016/04/30";$update.="";
+$version="0.1.7";$version.="";
+$codename="Larry Wall";$codename.=""; # https://en.wikipedia.org/wiki/Larry_Wall <3
+$update="2016/09/21";$update.="";
 
 system(($^O eq 'MSWin32') ? 'cls' : 'clear');
+use if $^O eq "MSWin32", Win32::Console::ANSI;
 use Term::ANSIColor;
+
 
 $SIG{INT} = \&interrupt;
 sub interrupt {
@@ -44,38 +46,30 @@ sub interrupt {
 }
 do "core/header.pl";
 do "core/main.pl";
+do "modules/firewall.pl";
 do "core/ver.pl";
 do "exploit/verexploit.pl";
 do "modules/license.pl";
+do "modules/pathdisclure.pl";
 do "modules/dirlisting.pl";
 do "modules/missconfig.pl";
 do "modules/cpfinder.pl";
 do "modules/cpupgrade.pl";
 do "modules/validator.pl";
 do "modules/robots.pl";
-do "exploit/faq.pl";
+do "modules/c99finder.pl";
+do "modules/backupfinder.pl";
+do "modules/errfinder.pl";
 do "modules/configfinder.pl";
+do "exploit/faq.pl";
 do "exploit/vbseo.pl";
 do "exploit/xperience.pl";
 do "exploit/upexploit.pl";
 do "exploit/arcade.pl";
 do "exploit/yui.pl";
 do "exploit/htmlcode.pl";
-do "modules/c99finder.pl";
-do "modules/backupfinder.pl";
-do "modules/errfinder.pl";
 do "exploit/decodearguments.pl";
 
-our $target="$target/";
-if($target =~ /http:\/\/(.*?)\//){our $li=$1;}
-if($target =~ /https:\/\/(.*?)\//){our $li=$1;}
-open(my $fh, '>', "reports/$1.txt");
-our $log="$log";
-print $fh "$log";
-close $fh;
-
-print color("yellow");
-print "\n\nYour Report : reports/$1.txt\n\n";
-
+do "core/report.pl";
 print color("reset");
 

@@ -1,18 +1,26 @@
 #start Version finder
-dprint("Processing $target ...\n\n");
+@pa = ("$target/clientscript/vbulletin_global.js","$target/clientscript/vbulletin-core.js","$target/clientscript/vbulletin_menu.js","$target/");
 
-$source=$ua->get("$target/")->decoded_content;
-if (($source =~ m/vbulletin/i || $source =~ m/Vbulletin/i || $source =~ m/vBulletin/i))
-{print "";}else{
-    print color("red");
-    print "[++] The target is alive! But is not running on vbulletin.\nDo you want to continue? [y/N] ";
-    $inp=<STDIN>;
-    if($inp =~ /N/g || $inp =~ /n/g){
-        print color("reset");
-        exit 0;
-    }
+foreach $lin(@pa){
+    $source=$ua->get($lin)->decoded_content;
+    if (($source =~ m/vbulletin/i || $source =~ m/Vbulletin/i || $source =~ m/vBulletin/i))
+    {goto len;}
 }
-
+print color("red");
+print "[++] The target is alive! But is not running on vbulletin.\nDo you want to continue? [y/N] ";
+$inp=<STDIN>;
+if($inp =~ /N/g || $inp =~ /n/g){
+    print color("reset");
+    exit 0;
+}
+len:;
+$source =~ /ulletin (.*?)\n/;
+$ver="vBulletin $1";
+if($ver !~ m/\./i){
+$source=$ua->get("$target/clientscript/vbulletin-core.js")->decoded_content;
+$source =~ /ulletin (.*?)\n/;
+$ver="vBulletin $1";
+}
 $ua->requests_redirectable(undef);
 
 
@@ -49,7 +57,6 @@ if($ver !~ m/\./i){
 
 $ver =~ tr/[0-9][a-z][A-Z][\.]\ //cd;
 
-if($ver !~ m/\./i){fprint("vBulletin Version : ver 404\n")}else{tprint("vBulletin Version :  $ver\n");}
-
+if($ver !~ m/\./i){fprint("ver 404\n")}else{tprint("$ver\n");}
 
 #end Version finder

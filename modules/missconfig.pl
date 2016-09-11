@@ -12,4 +12,5 @@ foreach $config(@configs){
 if($ctf==0){
 	fprint("Readable info/status files are not found");
 }
+
 #end config.php.x check

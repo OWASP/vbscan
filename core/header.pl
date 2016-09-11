@@ -2,30 +2,29 @@
 
 use Term::ANSIColor;
 
-if(!defined $ARGV[0]){
-    
-    print color("YELLOW");
-    print q{
-        
- _  _  ____  ___   ___    __    _  _
-( \/ )(  _ \/ __) / __)  /__\  ( \( )
- \  /  ) _ <\__ \( (__  /(__)\  )  (
-  \/  (____/(___/ \___)(__)(__)(_)\_)
-        
-
-    };
-    print color("reset");
-    print "
+   	print color("YELLOW");
+   	print q{
+    _  _  ____  ___   ___    __    _  _
+   ( \/ )(  _ \/ __) / __)  /__\  ( \( )
+    \  /  ) _ <\__ \( (__  /(__)\  )  (
+     \/  (____/(___/ \___)(__)(__)(_)\_)
+   	};
+   	print color("reset");
+   	print "
+   
     --=[". color("BLUE") . "OWASP VBScan". color("reset") ."
     +---++---==[Version : "
-    . color("red"). "$version\n". color("reset") . "    +---++---==[Update Date : [". color("red") . "$update". color("reset") . "]
+   	. color("red"). "$version\n". color("reset") . "    +---++---==[Update Date : [". color("red") . "$update". color("reset") . "]
     +---++---==[Author : ". color("red") . "Mohammad Reza Espargham". color("reset")."
     +---++---==[Website : ". color("red") . "www.reza.es". color("reset")."
-    --=[Code name : ". color("red") . "$codename". color("reset");
+    --=[Code name : ". color("red") . "$codename". color("reset")."\n\n";
+    	
+if(!defined $ARGV[0]){
+ 
     print color("cyan");
     printf "\n\n   Usage: \n \t$0 <target>\n";
     printf "\t$0 http://target.com/vbulletin\n\n";
-    printf "\n\n   Options: \n";
+    printf "\n   Options: \n";
     printf "\t$0 --help\n\n";
     print color("reset");
     exit(1);

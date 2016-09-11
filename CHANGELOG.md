@@ -1,3 +1,15 @@
+OWASP VBScan 0.1.7 [Larry Wall]
+============
+* Updated exploit database
+* Compatible With Windows [Linux,OSX,Windows]
+* Added Full Path Disclosure (FPD) module
+* Added firewall detect/bypass module
+* Optimized version checker module engine [#12 issue]
+* Upgrade config finder module
+* Random user agent module set as default setting
+* Added HTML Report
+
+
 OWASP VBScan 0.1.6 [Dennis Ritchie again]
 ============
 * Project name has been changed to "OWASP VBScan"

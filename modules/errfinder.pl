@@ -11,6 +11,6 @@ foreach $er(@error){
     }
 }
 if($ertf==0) {
-    fprint("error log is not found\n");
+    fprint("error log is not found");
 }
 #end Checking error.log

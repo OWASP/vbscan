@@ -13,7 +13,7 @@ if ($response->status_line =~ /200/g and $content_type =~ /text\/plain/g) {
 			$probot.="$target$between\n";
 		}
 	}
-	tprint("robots.txt is found\npath : $target/robots.txt \n\nIntersting path found from robots.txt\n$probot");
+	tprint("robots.txt is found\npath : $target/robots.txt \n\nInteresting path found from robots.txt\n$probot");
 }else{
 	fprint("robots.txt is not found");
 }
