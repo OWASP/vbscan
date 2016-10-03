@@ -9,7 +9,7 @@ print q{
   \  /  ) _ <\__ \( (__  /(__)\  )  (
    \/  (____/(___/ \___)(__)(__)(_)\_)
 };
-   	print color("reset");
+   	print color("red") . "\t\t(1337.today)" . color("reset");
    	print "
    
     --=[". color("BLUE") . "OWASP VBScan". color("reset") ."
@@ -17,7 +17,7 @@ print q{
    	. color("red"). "$version\n". color("reset") . "    +---++---==[Update Date : [". color("red") . "$update". color("reset") . "]
     +---++---==[Author : ". color("red") . "Mohammad Reza Espargham". color("reset")."
     +---++---==[Website : ". color("red") . "www.reza.es". color("reset")."
-    --=[Code name : ". color("red") . "$codename". color("reset")."\n\n";
+    --=[Code name : ". color("red") . "$codename". color("reset")."\n     \@OWASP_VBScan , \@rezesp , \@OWASP\n\n";
     	
 if(!defined $ARGV[0]){
  
