@@ -56,7 +56,7 @@ if($ver !~ m/\./i){
 }
 
 $ver =~ tr/[0-9][a-z][A-Z][\.]\ //cd;
-# if( $ver =~ /\d\.\d\.\d+/ and length($ver) > 25) {$ver= "vBulletin $&";}  
+if( $ver =~ /\d\.\d\.\d+/ and length($ver) > 25) {$ver= "vBulletin $&";}  
 
 if($ver !~ m/\./i){fprint("ver 404\n")}else{tprint("$ver\n");}
  
