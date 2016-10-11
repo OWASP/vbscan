@@ -22,7 +22,7 @@ print q{
 if(!defined $ARGV[0]){
  
     print color("cyan");
-    printf "\n\n   Usage: \n \t$0 <target>\n";
+    printf "\n   Usage: \n \t$0 <target>\n";
     printf "\t$0 http://target.com/vbulletin\n\n";
     printf "\n   Options: \n";
     printf "\t$0 --help\n\n";
