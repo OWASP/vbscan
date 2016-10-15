@@ -1,4 +1,4 @@
-#start admincp/modcp
+#start fw detector
 dprint('Detecting Vbulletin based Firewall');
 $uatmp=$ua->agent();
 
@@ -56,4 +56,4 @@ print color("blue");
 $ua->agent($uatmp);
 dnpen:;
 
-#end admincp/modcp
+#end fw detector

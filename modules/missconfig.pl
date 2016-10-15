@@ -1,4 +1,4 @@
-#start config.php.x check
+#start missconfig check
 $ctf=0;
 dprint("Checking apache info/status files");
 @configs = ('server-status','server-info');
@@ -13,4 +13,4 @@ if($ctf==0){
 	fprint("Readable info/status files are not found");
 }
 
-#end config.php.x check
+#end missconfig check

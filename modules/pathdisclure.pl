@@ -1,4 +1,4 @@
-#start find backup
+#start path disclosure
 
 @plinks = ("forumdisplay.php?do[]=[test.dll]","calendar.php?do[]=[test.dll]","search.php?do[]=[test.dll]","forumrunner/include/album.php","core/vb5/route/channel.php","core/vb5/route/conversation.php","includes/api/interface/noncollapsed.php","includes/api/interface/collapsed.php","vbseo_sitemap/addons/vbseo_sm_vba.php","vbseo_sitemap/addons/vbseo_sm_vba_links.php");
 foreach $plink(@plinks){
@@ -47,4 +47,4 @@ foreach $plink(@plinks){
 }
 pend:;
 
-#end find backup
+#end path disclosure
