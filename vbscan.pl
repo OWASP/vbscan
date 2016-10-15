@@ -31,7 +31,7 @@
 $author="Mohammad Reza Espargham";$author.="";
 $version="0.1.7";$version.="";
 $codename="Larry Wall";$codename.=""; # https://en.wikipedia.org/wiki/Larry_Wall <3
-$update="2016/09/21";$update.="";
+$update="2016/10/15";$update.="";
 
 system(($^O eq 'MSWin32') ? 'cls' : 'clear');
 use if $^O eq "MSWin32", Win32::Console::ANSI;
