@@ -41,7 +41,7 @@ use Term::ANSIColor;
 $SIG{INT} = \&interrupt;
 sub interrupt {
     fprint("\nShutting Down , Interrupt by user");
-    do "core/report.pl";
+    do "./core/report.pl";
     print color("reset");
     exit 0;
 }
