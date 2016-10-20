@@ -29,7 +29,7 @@
 #    Github      :   https://github.com/rezasp/vbscan/
 
 $author="Mohammad Reza Espargham";$author.="";
-$version="0.1.7";$version.="";
+$version="0.1.7.1";$version.="";
 $codename="Larry Wall";$codename.=""; # https://en.wikipedia.org/wiki/Larry_Wall <3
 $update="2016/10/15";$update.="";
 
@@ -45,31 +45,31 @@ sub interrupt {
     print color("reset");
     exit 0;
 }
-do "core/header.pl";
-do "core/main.pl";
-do "modules/firewall.pl";
-do "core/ver.pl";
-do "exploit/verexploit.pl";
-do "modules/license.pl";
-do "modules/pathdisclure.pl";
-do "modules/dirlisting.pl";
-do "modules/missconfig.pl";
-do "modules/cpfinder.pl";
-do "modules/cpupgrade.pl";
-do "modules/validator.pl";
-do "modules/robots.pl";
-do "modules/c99finder.pl";
-do "modules/backupfinder.pl";
-do "modules/errfinder.pl";
-do "modules/configfinder.pl";
-do "exploit/faq.pl";
-do "exploit/vbseo.pl";
-do "exploit/xperience.pl";
-do "exploit/upexploit.pl";
-do "exploit/arcade.pl";
-do "exploit/yui.pl";
-do "exploit/htmlcode.pl";
-do "exploit/decodearguments.pl";
+do "./core/header.pl";
+do "./core/main.pl";
+do "./modules/firewall.pl";
+do "./core/ver.pl";
+do "./exploit/verexploit.pl";
+do "./modules/license.pl";
+do "./modules/pathdisclure.pl";
+do "./modules/dirlisting.pl";
+do "./modules/missconfig.pl";
+do "./modules/cpfinder.pl";
+do "./modules/cpupgrade.pl";
+do "./modules/validator.pl";
+do "./modules/robots.pl";
+do "./modules/c99finder.pl";
+do "./modules/backupfinder.pl";
+do "./modules/errfinder.pl";
+do "./modules/configfinder.pl";
+do "./exploit/faq.pl";
+do "./exploit/vbseo.pl";
+do "./exploit/xperience.pl";
+do "./exploit/upexploit.pl";
+do "./exploit/arcade.pl";
+do "./exploit/yui.pl";
+do "./exploit/htmlcode.pl";
+do "./exploit/decodearguments.pl";
 
-do "core/report.pl";
+do "./core/report.pl";
 print color("reset");

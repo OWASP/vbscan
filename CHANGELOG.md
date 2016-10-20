@@ -1,3 +1,8 @@
+OWASP VBScan 0.1.7.1 [Larry Wall]
+============
+* Compatible with perl v5.24.1 , issue #13
+
+
 OWASP VBScan 0.1.7 [Larry Wall]
 ============
 * Updated exploit database
