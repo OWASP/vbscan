@@ -54,7 +54,15 @@ if($ver !~ m/\./i){
     $ver=$1;
     $ver =~ s/\<//g;$ver =~ s/&reg;//g;$ver =~ s/Version //g;
 }
-
+if($ver !~ m/\./i){
+    $source=$ua->get("$target/index.php")->decoded_content;
+    $source =~ m/SIMPLEVERSION = \"(.*?)\"/g; 
+    $version="$1";
+    $one= substr $version ,0,1;
+    $two= substr $version ,1,1;
+    $three= substr $version ,2,1;
+    $ver= $one.$two.$three;
+}
 $ver =~ tr/[0-9][a-z][A-Z][\.]\ //cd;
 if( $ver =~ /\d\.\d\.\d+/ and length($ver) > 25) {$ver= "vBulletin $&";}  
 
