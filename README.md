@@ -13,7 +13,7 @@
 OWASP VBScan 
 ======
 
-OWASP VBScan  (short for [VB]ulletin Vulnerability [Scan]ner)  is an opensource project in perl programming language to detect VBulletin CMS vulnerabilities and analyses them .
+OWASP VBScan  (short for [VB]ulletin Vulnerability [Scan]ner)  is an opensource project in perl programming language to detect VBulletin CMS vulnerabilities and analysis them .
 
 ### Why OWASP VBScan  ?
 
