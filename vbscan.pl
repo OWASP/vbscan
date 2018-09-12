@@ -37,7 +37,7 @@ sub interrupt {
     do "$mepath/core/report.pl";
     print color("reset");
     exit 0;
-}
+} 
 do "$mepath/core/header.pl";
 do "$mepath/core/main.pl";
 do "$mepath/modules/firewall.pl";
@@ -68,6 +68,7 @@ do "$mepath/exploit/openredirection.pl";
 do "$mepath/exploit/yui.pl";
 do "$mepath/exploit/htmlcode.pl";
 do "$mepath/exploit/decodearguments.pl";
+
 
 do "$mepath/core/report.pl";
 print color("reset");
