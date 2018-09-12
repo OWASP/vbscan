@@ -41,7 +41,7 @@ foreach $plink(@plinks){
          $pathdis =~ s/<strong>//g;
          $pathdis =~ s/<\/strong>//g;
         dprint("Full Path Disclosure (FPD)");
-        tprint("Full Path Disclosure (FPD) in '$target/$plink' : $pathdis\n");
+        tprint("Full Path Disclosure (FPD) in '$target/$plink' : $pathdis");
         goto pend;
     }
 }

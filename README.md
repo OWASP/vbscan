@@ -1,4 +1,4 @@
-![Version 0.1.7.1](https://img.shields.io/badge/Version-0.1.7.1-green.svg)
+![Version 0.1.8](https://img.shields.io/badge/Version-0.1.8-green.svg)
 [![ToolsWatch Best Tools](https://www.toolswatch.org/badges/toptools/2016.svg)](https://www.toolswatch.org/2017/02/2016-top-security-tools-as-voted-by-toolswatch-org-readers/)
 ![Perl 5.x](https://img.shields.io/badge/Perl-5.x-yellow.svg)
 [![GPLv3 License](https://img.shields.io/badge/License-GPLv3-red.svg)](https://github.com/rezasp/vbscan/blob/master/COPYING.GPL)

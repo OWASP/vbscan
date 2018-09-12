@@ -1,3 +1,16 @@
+OWASP VBScan 0.1.8 [Self Challenge]
+============
+* Updated vulnerabilities database
+* "Email Before Registration Plugin" SQL exploit added
+* "Tapatalk vbulletin plugin" exploit added
+* "Routestring RCE" exploit added
+* Vbulletin possible password logger detector added
+* Allow start from any path
+* OpenRedirection founder module added
+* Vbulletin version comparing module added
+* A few enhancements
+
+
 OWASP VBScan 0.1.7.1 [Larry Wall]
 ============
 * Compatible with perl v5.24.1 , issue #13
