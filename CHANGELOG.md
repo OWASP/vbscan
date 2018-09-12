@@ -9,7 +9,7 @@ OWASP VBScan 0.1.8 [Self Challenge]
 * OpenRedirection founder module added
 * Vbulletin version comparing module added
 * A few enhancements
-
+ 
 
 OWASP VBScan 0.1.7.1 [Larry Wall]
 ============
