@@ -50,7 +50,7 @@ $ua->agent($randagnt);
 
 chomp($target=$ARGV[0]);
 
-if($target !~ /http/) { $target = "http://$target"; };
+if($target !~ /^http/) { $target = "http://$target"; };
 
 our @dlog;our @tflog;
 
